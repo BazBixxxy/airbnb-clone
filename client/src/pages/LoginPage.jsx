@@ -10,7 +10,6 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const { setAuthUser } = useAuthContext();
 
-  const [redirect, setRedirect] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
