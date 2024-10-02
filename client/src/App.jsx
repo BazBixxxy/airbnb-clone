@@ -27,6 +27,8 @@ import axios from "axios";
 import PlacePage from "./pages/PlacePage";
 import PlaceView, { placeLoader } from "./pages/PlaceView";
 import EditPage from "./pages/EditPage";
+import CurrencyPage from "./pages/CurrencyPage";
+import NewCurrencyPage from "./pages/NewCurrencyPage";
 
 axios.defaults.withCredentials = true;
 
@@ -38,6 +40,8 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
+        <Route path="/currency" element={<CurrencyPage />} />
+        <Route path="/new-currency" element={<NewCurrencyPage />} />
         <Route path="/" element={<MainLayout />}>
           <Route
             index
